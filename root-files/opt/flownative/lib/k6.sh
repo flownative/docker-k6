@@ -33,5 +33,6 @@ EOF
 # @return void
 #
 k6_initialize() {
-    info "K6: Initialized"
+    info "K6: Initialize"
+    k6_env
 }
