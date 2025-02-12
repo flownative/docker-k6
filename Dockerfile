@@ -2,10 +2,10 @@
 # K6
 # Latest versions: https://github.com/grafana/k6
 
-ARG K6_VERSION=0.38.3
+ARG K6_VERSION=0.56.0
 FROM grafana/k6:$K6_VERSION as k6
 
-FROM europe-docker.pkg.dev/flownative/docker/base:bullseye
+FROM europe-docker.pkg.dev/flownative/docker/base:bookworm
 MAINTAINER Robert Lemke <robert@flownative.com>
 
 ENV K6_VERSION=$K6_VERSION
